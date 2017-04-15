@@ -170,7 +170,7 @@ Header
 Footer
 
 // file: page.liquid
-{% layout "default-layout" %}
+{% extend "default-layout" %}
 {% block content %}My page content{% endblock %}
 ```
 

@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harttle/shopify-liquid.git"
+    "url": "git+https://github.com/OpeItcLoc03/shopify-liquid.git"
   },
   "keywords": [
     "liquid",
@@ -24,9 +24,9 @@
   "author": "Harttle",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/harttle/shopify-liquid/issues"
+    "url": "https://github.com/OpeItcLoc03/shopify-liquid/issues"
   },
-  "homepage": "https://github.com/harttle/shopify-liquid#readme",
+  "homepage": "https://github.com/OpeItcLoc03/shopify-liquid#readme",
   "dependencies": {
     "any-promise": "^1.3.0"
   },
