@@ -2274,13 +2274,13 @@ module.exports = function (engine) {
     require("./if.js")(engine);
     require("./include.js")(engine);
     require("./increment.js")(engine);
-    require("./extend.js")(engine);
+    require("./extends.js")(engine);
     require("./raw.js")(engine);
     require("./tablerow.js")(engine);
     require("./unless.js")(engine);
 };
 
-},{"./assign.js":22,"./capture.js":23,"./case.js":24,"./comment.js":25,"./cycle.js":26,"./decrement.js":27,"./for.js":28,"./if.js":29,"./include.js":30,"./increment.js":31,"./extend.js":33,"./raw.js":34,"./tablerow.js":35,"./unless.js":36}],33:[function(require,module,exports){
+},{"./assign.js":22,"./capture.js":23,"./case.js":24,"./comment.js":25,"./cycle.js":26,"./decrement.js":27,"./for.js":28,"./if.js":29,"./include.js":30,"./increment.js":31,"./extends.js":33,"./raw.js":34,"./tablerow.js":35,"./unless.js":36}],33:[function(require,module,exports){
 'use strict';
 
 var Liquid = require('..');
@@ -2290,7 +2290,7 @@ var assert = require('../src/util/assert.js');
 
 module.exports = function (liquid) {
 
-    liquid.registerTag('extend', {
+    liquid.registerTag('extends', {
         parse: function parse(token, remainTokens) {
             var match = lexical.value.exec(token.args);
             assert(match, 'illegal token ' + token.raw);
