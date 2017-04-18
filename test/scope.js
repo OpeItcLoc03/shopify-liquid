@@ -11,7 +11,10 @@ describe('scope', function() {
             bar: {
                 zoo: 'coo',
                 "Mr.Smith": 'John',
-                arr: ['a', 'b']
+                arr: ['a', 'b'],
+                foo: {
+                    zoo: 'coo',
+                }
             }
         };
         scope = Scope.factory(ctx);
@@ -35,6 +38,8 @@ describe('scope', function() {
                 .to.deep.equal(['foo', 'coo']);
             expect(scope.propertyAccessSeq('foo[bar["zoo"]]'))
                 .to.deep.equal(['foo', 'coo']);
+            expect(scope.propertyAccessSeq('bar["foo"].zoo'))
+                .to.deep.equal(['bar', 'foo', 'zoo']);
         });
     });
 

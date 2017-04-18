@@ -71,6 +71,9 @@ describe('lexical', function() {
         it('should return true for "3-4"', function() {
             lexical.isVariable("3-4").should.equal(true);
         });
+        it('should return true for "foo[\'bar\'].foo"', function() {
+            lexical.isVariable("foo['bar'].foo").should.equal(true);
+        });
     });
 
     it('should test none literal', function() {
